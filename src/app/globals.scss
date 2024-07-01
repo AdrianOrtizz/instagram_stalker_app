@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-myPal-background text-white lg:overflow-hidden;
+}
+
+/* Estilo para la barra de scroll */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de scroll vertical */
+}
+
+/* Estilo para el track de la barra de scroll */
+::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo del track */
+  padding: 20px;
+}
+
+/* Estilo para el thumb de la barra de scroll */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del thumb */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el thumb al pasar el ratón */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del thumb al pasar el ratón */
+}
