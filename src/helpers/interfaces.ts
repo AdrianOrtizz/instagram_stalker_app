@@ -52,5 +52,4 @@ export interface Following {
 export interface FormatedAccountData {
   name: string;
   username: string;
-  img: string;
 }

@@ -1,4 +1,6 @@
 export const getFollowers = async (account: string) => {
+  "use server";
+
   const url = `https://instagram-scraper-api2.p.rapidapi.com/v1/followers?username_or_id_or_url=${account}&amount=1000`;
   const options = {
     method: "GET",
@@ -20,6 +22,8 @@ export const getFollowers = async (account: string) => {
 };
 
 export const getFollowing = async (account: string) => {
+  "use server";
+
   const url = `https://instagram-scraper-api2.p.rapidapi.com/v1/following?username_or_id_or_url=${account}&amount=1000`;
   const options = {
     method: "GET",
