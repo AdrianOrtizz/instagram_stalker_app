@@ -5,7 +5,7 @@ export const getFollowers = async (account: string) => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "6077387938msh4840207330c1dabp1c3d01jsnb697dcbdf8a7",
+      "x-rapidapi-key": "362ab6dc14msh496b27f347b8c2cp1179e4jsnf666183cef18",
       "x-rapidapi-host": "instagram-scraper-api2.p.rapidapi.com",
       "Cache-Control": "no-cache, no-store, must-revalidate",
       Pragma: "no-cache",
@@ -16,7 +16,7 @@ export const getFollowers = async (account: string) => {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-
+    
     return result;
   } catch (error) {}
 };
@@ -28,7 +28,7 @@ export const getFollowing = async (account: string) => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "6077387938msh4840207330c1dabp1c3d01jsnb697dcbdf8a7",
+      "x-rapidapi-key": "362ab6dc14msh496b27f347b8c2cp1179e4jsnf666183cef18",
       "x-rapidapi-host": "instagram-scraper-api2.p.rapidapi.com",
       "Cache-Control": "no-cache, no-store, must-revalidate",
       Pragma: "no-cache",
